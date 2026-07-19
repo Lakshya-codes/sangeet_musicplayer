@@ -28,9 +28,6 @@ const rawSongs = [
     { name: "Ikko Mikke - Satinder Sartaaj", file: "Ikko Mikke.mp3", img: "cd6.webp" },
     { name: "Moonlight - Harnoor", file: "Moonlight.mp3", img: "cd6.jpg" },
     { name: "Boyfriend - Karan Aujla", file: "Boyfriend.mp3", img: "cd6.webp" },
-    // NOTE: this was a SoundCloud web page link, not a direct audio file —
-    // an <audio> element can't play it, so it's skipped from the playlist.
-    // Swap in a direct .mp3 (or hosted stream URL) for "Aa Ja Diljaaniya" to bring it back.
     { name: "Aa Ja Diljaaniya - Amrinder Gill", file: "https://soundcloud.com/hustinder-423562794/aa-ja-diljaaniya", img: "cd6.webp" },
     { name: "Tera Hone Laga Hoon", file: "Tera Hone Laga Hoon.mp3", img: "cd6.webp" },
 ];
