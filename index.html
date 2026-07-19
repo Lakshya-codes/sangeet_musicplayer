@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sangeet — Your Personal Sukoon Place</title>
+    <link rel="stylesheet" href="music.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@500;600;700;800&family=Poppins:wght@400;500;600&family=Rouge+Script&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="page">
+
+        <header class="site-header">
+            <p class="eyebrow">Sangeet</p>
+            <h1>Apna <span>Sukoon</span> Player</h1>
+            <p class="tagline">Your personal sukoon place 💕</p>
+        </header>
+
+        <main class="player-card" aria-label="Music player">
+
+            <div class="turntable">
+                <div class="platter">
+                    <div class="disc" id="disc">
+                        <img id="cover" src="" alt="">
+                        <div class="disc-grooves"></div>
+                        <div class="disc-center"></div>
+                    </div>
+                </div>
+                <div class="tonearm" id="tonearm">
+                    <div class="tonearm-base"></div>
+                    <div class="tonearm-bar">
+                        <div class="tonearm-head"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="track-info">
+                <h2 id="songname">Loading…</h2>
+                <p id="songmeta" class="track-meta"></p>
+            </div>
+
+            <div class="progress-row">
+                <span id="currenttime" class="time">0:00</span>
+                <input type="range" id="slider" value="0" max="100" min="0" step="0.1" aria-label="Seek in song">
+                <span id="duration" class="time">0:00</span>
+            </div>
+
+            <div class="controls">
+                <button id="backbtn" class="ctrl-btn" type="button" aria-label="Previous song">
+                    <i class="fa-solid fa-backward"></i>
+                </button>
+                <button id="playbtn" class="ctrl-btn ctrl-btn--main" type="button" aria-label="Play">
+                    <i class="fa-solid fa-play"></i>
+                </button>
+                <button id="forwardbtn" class="ctrl-btn" type="button" aria-label="Next song">
+                    <i class="fa-solid fa-forward"></i>
+                </button>
+            </div>
+
+            <div class="volume-row">
+                <i class="fa-solid fa-volume-low" aria-hidden="true"></i>
+                <input type="range" id="volume" value="80" max="100" min="0" aria-label="Volume">
+            </div>
+
+            <p id="playererror" class="player-error" role="alert" aria-live="polite" hidden></p>
+
+        </main>
+
+        <section class="request-card" aria-labelledby="reqheading">
+            <h2 id="reqheading">Request a song 🎶</h2>
+            <p class="request-sub">Tell us what to add to the mixtape.</p>
+
+            <form action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="75536eb0-c38b-4d8c-bf70-9a8b838e3496">
+
+                <label class="field" for="yourname">
+                    <span class="field-label">Your good name</span>
+                    <input id="yourname" type="text" name="name" placeholder="e.g. Simran" required>
+                </label>
+
+                <label class="field" for="songinput">
+                    <span class="field-label">Song name</span>
+                    <input id="songinput" type="text" name="song" placeholder="e.g. Ikko Mikke" required>
+                </label>
+
+                <button type="submit" id="submit">Send request</button>
+            </form>
+        </section>
+
+        <footer>
+            <p>Made with harmony ❤️</p>
+            <p>A project for internship with CodeAlpha 🚀</p>
+            <p>© Lakshya Makkar</p>
+        </footer>
+
+    </div>
+
+    <script src="music.js"></script>
+</body>
+</html>
