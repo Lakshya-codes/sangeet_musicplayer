@@ -22,14 +22,14 @@ const volumeSlider = document.getElementById("volume");
 
 // Raw playlist as authored.
 const rawSongs = [
-    { name: "Thinking Of You - AP Dhillon", file: "Thinking Of You.mp3", img: "cd6.webp" },
-    { name: "Dooron Dooron - Paresh Pahuja", file: "Dooron Dooron.mp3", img: "cd6.webp" },
-    { name: "Charmer - Diljit Dosanjh", file: "Charmer.mp3", img: "cd6.webp" },
-    { name: "Ikko Mikke - Satinder Sartaaj", file: "Ikko Mikke.mp3", img: "cd6.webp" },
+    { name: "Thinking Of You - AP Dhillon", file: "Thinking Of You.mp3", img: "cd6.jpg" },
+    { name: "Dooron Dooron - Paresh Pahuja", file: "Dooron Dooron.mp3", img: "cd6.jpg"},
+    { name: "Charmer - Diljit Dosanjh", file: "Charmer.mp3", img: "cd6.jpg" },
+    { name: "Ikko Mikke - Satinder Sartaaj", file: "Ikko Mikke.mp3", img: "cd6.jpg" },
     { name: "Moonlight - Harnoor", file: "Moonlight.mp3", img: "cd6.jpg" },
-    { name: "Boyfriend - Karan Aujla", file: "Boyfriend.mp3", img: "cd6.webp" },
-    { name: "Aa Ja Diljaaniya - Amrinder Gill", file: "https://soundcloud.com/hustinder-423562794/aa-ja-diljaaniya", img: "cd6.webp" },
-    { name: "Tera Hone Laga Hoon", file: "Tera Hone Laga Hoon.mp3", img: "cd6.webp" },
+    { name: "Boyfriend - Karan Aujla", file: "Boyfriend.mp3", img: "cd6.jpg" },
+    { name: "Aa Ja Diljaaniya - Amrinder Gill", file: "https://soundcloud.com/hustinder-423562794/aa-ja-diljaaniya", img: "cd6.jpg" },
+    { name: "Tera Hone Laga Hoon", file: "Tera Hone Laga Hoon.mp3", img: "cd6.jpg" },
 ];
 
 function isPlayableFile(file){
